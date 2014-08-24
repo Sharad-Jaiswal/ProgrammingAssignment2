@@ -15,7 +15,7 @@ Here, two functions have been used to cache the matrix and its inverse together 
 **Guideline to use the code**
 
 > Store the R code "cachematrix.R" in your directory and run the code. for testing you can use follwoing -  
-1. run following for a sample run- 
+* run following for a sample run- 
  * create a matrix: sample <- makeCacheMatrix( matrix(c(10,20,50,70,90,110,200,100,300), nrow = 3, ncol = 3) )
  * get inverse: cacheSolve(sample)
  * again run to get inverse from cache: cacheSolve(sample)
