@@ -21,12 +21,12 @@ Second Function as below -
 
 2.  `cacheSolve`: This function computes the inverse of the special "matrix" returned by `makeCacheMatrix` above. If the inverse has already been calculated (and the matrix has not changed), then `cacheSolve` should retrieve the inverse from the cache.
 
-## Guideline to use the code##
+## Guideline to use the code
 
 ### Store the R code "cachematrix.R" in your directory and run the code
 ### A Sample case and output has been shown below - 
-### run following in console ## 
-## creating a square matrix##
+### run following in console
+## creating a square matrix
 sample <- makeCacheMatrix( matrix(c(10,20,50,70,90,110,200,100,300), nrow = 3, ncol = 3) )
 ## run for inverse 
 cacheSolve(sample)
