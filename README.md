@@ -23,22 +23,22 @@ Second Function as below -
 
 ## Guideline to use the code
 
-### Store the R code "cachematrix.R" in your directory and run the code
-### A Sample case and output has been shown below - 
-### run following in console
-## creating a square matrix
+Store the R code "cachematrix.R" in your directory and run the code. A Sample case and output has been shown below - 
+a. run following in console for creating a square matrix - 
 sample <- makeCacheMatrix( matrix(c(10,20,50,70,90,110,200,100,300), nrow = 3, ncol = 3) )
-## run for inverse 
+b. run for inverse 
 cacheSolve(sample)
-##            [,1]         [,2]         [,3]
-[1,] -0.043243243 -0.002702703  0.029729730
-[2,]  0.002702703  0.018918919 -0.008108108
-[3,]  0.006216216 -0.006486486  0.001351351
-## again run for the inverse and now the inverse should come be cache value##
+                [,1]         [,2]         [,3]
+        [1,] -0.043243243 -0.002702703  0.029729730
+        [2,]  0.002702703  0.018918919 -0.008108108
+        [3,]  0.006216216 -0.006486486  0.001351351
+
+Again run for the inverse and now the inverse should come be cache value - 
+
 cacheSolve(sample)
-##getting cached data
-             [,1]         [,2]         [,3]
-[1,] -0.043243243 -0.002702703  0.029729730
-[2,]  0.002702703  0.018918919 -0.008108108
-[3,]  0.006216216 -0.006486486  0.001351351
-##
+
+getting cached data
+                     [,1]         [,2]         [,3]
+        [1,] -0.043243243 -0.002702703  0.029729730
+        [2,]  0.002702703  0.018918919 -0.008108108
+        [3,]  0.006216216 -0.006486486  0.001351351
